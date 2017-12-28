@@ -1,2 +1,3 @@
-# sce_wechat
-wechat plugin in odoo
+Wechat plugin 
+================================
+Only used for SCE Coperation.

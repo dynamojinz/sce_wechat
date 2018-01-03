@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <record model="res.groups" id="designlib_admin">
+            <field name="name">Design Library / Administrator</field>
+        </record>
+    </data>
+</odoo>

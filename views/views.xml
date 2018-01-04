@@ -112,7 +112,7 @@
     -->
 
     <!-- Top menu item -->
-    <menuitem name="Wechat" id="sce_wechat.menu_root"/>
+    <menuitem name="Wechat" id="sce_wechat.menu_root" groups="sce_wechat.wechat_admin"/>
     <!-- menu categories -->
     <menuitem name="Wechat config" id="sce_wechat.config" parent="sce_wechat.menu_root" action="sce_wechat.action_window"/>
     <menuitem name="Wechat logs" id="sce_wechat.logs" parent="sce_wechat.menu_root" action="sce_wechat.action_window_logs"/>

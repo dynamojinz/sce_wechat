@@ -1,7 +1,7 @@
 <odoo>
     <data>
-        <record model="res.groups" id="designlib_admin">
-            <field name="name">Design Library / Administrator</field>
+        <record model="res.groups" id="wechat_admin">
+            <field name="name">Wechat Plugin / Administrator</field>
         </record>
     </data>
 </odoo>

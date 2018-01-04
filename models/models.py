@@ -35,6 +35,7 @@ class Wechat(models.Model):
     agentid = fields.Integer()
     corpsecret = fields.Char()
     is_master = fields.Boolean(default=False)
+    code_image = fields.Binary("2-dimention code", attachment=True, help="This field holds 2-dimention code of wechat plugin")
 
     def get_token(self):
         if not self.token:

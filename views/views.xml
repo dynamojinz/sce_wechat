@@ -31,6 +31,24 @@
                     <field name="agentid"/>
                     <field name="is_master"/>
                 </group>
+                <group>
+                    <field name="code_image" widget="image"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sce_wechat.form_2_dim_code">
+        <field name="name">Wechat 2 Dimention Code</field>
+        <field name="model">sce_wechat.wechat</field>
+        <field name="arch" type="xml">
+            <form edit="false" create="false">
+                <div style="text-align:center">
+                    <div>用微信扫描以下二维码，手机端接收系统通知。</div>
+                    <div>
+                        <field name="code_image" widget="image"/>
+                    </div>
+                </div>
             </form>
         </field>
     </record>
@@ -68,6 +86,7 @@
       <field name="name">SCE Wechat Window</field>
       <field name="res_model">sce_wechat.wechat</field>
       <field name="view_mode">tree,form</field>
+      <field name="context">{'form_view_ref':'sce_wechat.form'}</field>
     </record>
     
     <record model="ir.actions.act_window" id="sce_wechat.action_window_logs">

@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sce_wechat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-04 10:16+0000\n"
+"PO-Revision-Date: 2018-01-04 18:20+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.4\n"
+"Last-Translator: \n"
+"Language: zh\n"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_code_image
+msgid "2-dimention code"
+msgstr "2维码"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_agentid
+msgid "Agentid"
+msgstr ""
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_corpid
+msgid "Corpid"
+msgstr ""
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_corpsecret
+msgid "Corpsecret"
+msgstr ""
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_create_uid
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_create_date
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_data
+msgid "Data"
+msgstr "数据"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_display_name
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_id
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_id
+msgid "ID"
+msgstr "序号"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_is_master
+msgid "Is Master"
+msgstr "默认账号"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat___last_update
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log___last_update
+msgid "Last Modified on"
+msgstr "最后编缉时间"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_write_uid
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_write_date
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_name
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_name
+msgid "Name"
+msgstr "姓名"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_request
+msgid "Request"
+msgstr "请求"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_log_response
+msgid "Response"
+msgstr "回复"
+
+#. module: sce_wechat
+#: model:ir.actions.act_window,name:sce_wechat.action_window_logs
+msgid "SCE Wechat Logs"
+msgstr "微信通讯日志"
+
+#. module: sce_wechat
+#: model:ir.actions.act_window,name:sce_wechat.action_window
+msgid "SCE Wechat Window"
+msgstr "微信设置窗口"
+
+#. module: sce_wechat
+#: model:ir.ui.view,arch_db:sce_wechat.form_2_dim_code
+msgid "Scan this code to receive wechat notification"
+msgstr "用微信扫描以下二维码，可以接收系统微信通知。"
+
+#. module: sce_wechat
+#: model:ir.ui.view,arch_db:sce_wechat.form
+msgid "Send test message?"
+msgstr "是否发送测试消息？"
+
+#. module: sce_wechat
+#: model:ir.ui.view,arch_db:sce_wechat.form
+msgid "Test Message"
+msgstr "测试消息发送"
+
+#. module: sce_wechat
+#: model:ir.model.fields,help:sce_wechat.field_sce_wechat_wechat_code_image
+msgid "This field holds 2-dimention code of wechat plugin"
+msgstr "微信插件二维码"
+
+#. module: sce_wechat
+#: model:ir.model.fields,field_description:sce_wechat.field_sce_wechat_wechat_token
+msgid "Token"
+msgstr ""
+
+#. module: sce_wechat
+#: model:ir.ui.menu,name:sce_wechat.menu_root
+msgid "Wechat"
+msgstr "微信"
+
+#. module: sce_wechat
+#: model:ir.ui.menu,name:sce_wechat.config
+msgid "Wechat config"
+msgstr "微信设置"
+
+#. module: sce_wechat
+#: model:ir.ui.menu,name:sce_wechat.logs
+msgid "Wechat logs"
+msgstr "微信日志"
+
+#. module: sce_wechat
+#: model:ir.model,name:sce_wechat.model_sce_wechat_wechat
+msgid "sce_wechat.wechat"
+msgstr "微信"
+
+#. module: sce_wechat
+#: model:ir.model,name:sce_wechat.model_sce_wechat_wechat_log
+msgid "sce_wechat.wechat_log"
+msgstr "微信日志"

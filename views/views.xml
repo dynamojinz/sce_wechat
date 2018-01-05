@@ -20,7 +20,6 @@
         <field name="model">sce_wechat.wechat</field>
         <field name="arch" type="xml">
             <form>
-                <button name="action_test" type="object" string="Test Message" class="oe_left" confirm="Send test message?"/>
                 <group>
                     <field name="name"/>
                     <field name="token"/>
@@ -45,6 +44,7 @@
             <form edit="false" create="false">
                 <div style="text-align:center">
                     <div>用微信扫描以下二维码，手机端接收系统通知。</div>
+                    <button name="action_test" type="object" string="Test Message" class="oe_button" confirm="Send test message?"/>
                     <div>
                         <field name="code_image" widget="image"/>
                     </div>

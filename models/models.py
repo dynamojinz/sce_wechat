@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 
 # class sce_sso(models.Model):
 #     _name = 'sce_sso.sce_sso'
@@ -44,21 +44,25 @@ class Wechat(models.Model):
 
     def refresh_token(self):
         self.token = get_token(self.env, WECHAT_URL, self.corpid, self.corpsecret)
-        print("token="+self.token)
+        # print("token="+self.token)
 
     def send_message(self, user, message):
         raw_message = messages(user, message, self.agentid)
         error_code = send_message(self.env, WECHAT_URL, self.get_token(), raw_message)
-        if error_code == 0:
-            print ('Succesfully')
-        elif error_code==42001:  # access_token expired
+        if error_code==42001:  # access_token expired
             self.refresh_token()
             error_code = send_message(self.env, WECHAT_URL, self.get_token(), raw_message)
+        if error_code == 0:
+            return 'Success'
         else:
-            print ('Failed')
+            return 'Failed'
 
     def action_test(self):
-        self.send_message('JinZan', 'Test message')
+        print(self.env.user)
+        logins = self.env.user.login.split('@')
+        if logins[-1]=='sce-re.com':
+            message = _("Test message from SCE coperation")
+            self.sudo().send_message(logins[0], message)
 
 
 #--------------------------------

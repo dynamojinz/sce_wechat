@@ -61,7 +61,7 @@ class Wechat(models.Model):
         # print(self.env.user)
         logins = self.env.user.login.split('@')
         if logins[-1]=='sce-re.com':
-            message = _("Test message from SCE coperation")
+            message = _("Test message from SCE corporation")
             self.sudo().send_message(logins[0], message)
 
 

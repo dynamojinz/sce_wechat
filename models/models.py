@@ -58,7 +58,7 @@ class Wechat(models.Model):
             return 'Failed'
 
     def action_test(self):
-        print(self.env.user)
+        # print(self.env.user)
         logins = self.env.user.login.split('@')
         if logins[-1]=='sce-re.com':
             message = _("Test message from SCE coperation")
@@ -91,6 +91,8 @@ def get_token(env, url, corpid, corpsecret):
 # 构建告警信息json
 #--------------------------------
 def messages(user, msg, agentid):
+    if isinstance(msg,list):
+        msg = msg[0]
     values = {
         "touser": user,
         "msgtype": 'text',

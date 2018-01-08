@@ -91,8 +91,6 @@ def get_token(env, url, corpid, corpsecret):
 # 构建告警信息json
 #--------------------------------
 def messages(user, msg, agentid):
-    if isinstance(msg,list):
-        msg = msg[0]
     values = {
         "touser": user,
         "msgtype": 'text',
